@@ -14,16 +14,14 @@ class ObjectTableViewCell: UITableViewCell {
     @IBOutlet weak var objectImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
-    func update(model:CategoryObjectModel)  {
+    func update(model:CategoryObjectModel) {
         objectName.text = model.objectName!
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
     }
     
 }
